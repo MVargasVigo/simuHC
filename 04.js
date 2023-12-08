@@ -13,7 +13,13 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  numeroString = String(num);
+  numeroReflejado = "";
+  for (let i = numeroString.length -1; i >= 0; i--) {
+    numeroReflejado += numeroString[i];
+  } if (numeroReflejado === numeroString){
+    return true;
+  }else return false;
 }
 
 // No modifiques nada debajo de esta linea //
